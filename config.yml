@@ -17,17 +17,19 @@ on_damaged_disable_flight: true
 # Example: protectionstone 10x10.toml -> alias = "10x10"
 # You can check available aliases by typing /ps give or /ps get in-game
 allowed_aliases:
-  - "10x10"
+  - "5x5"
   - "20x20"
 
 #custom messages
-nopermission: "&8 [&c&l!&8] &7You dont have a permission to use /claimfly command"
-outsideclaim: "&8 [&c&l!&8] &7You are outside of claimfly zone"
+# All messages use MiniMessage format. Learn more: https://docs.advntr.dev/minimessage/format.html
+# To disable a message, set it to "" (empty string)
+nopermission: "<dark_gray>[<red><bold>!</bold></red>] <gray>You dont have a permission to use /claimfly command"
+outsideclaim: "<dark_gray>[<red><bold>!</bold></red>] <gray>You are outside of claimfly zone"
 
 #notification message
-claimfly_on: "&8 [&a&l!&8] &fClaimfly &aON"
-claimfly_off: "&8 [&c&l!&8] &7Claimfly &cOFF"
-ondamaged: "&8 [&c&l!&8] &7You've been hit! &7Claimfly &cOFF"
+claimfly_on: "<dark_gray>[<green><bold>!</bold></green>] <white>Claimfly <green>ON</green>"
+claimfly_off: "<dark_gray>[<red><bold>!</bold></red>] <gray>Claimfly <red>OFF</red>"
+ondamaged: "<dark_gray>[<red><bold>!</bold></red>] <gray>You've been hit! <gray>Claimfly <red>OFF</red>"
 
 #custom placeholder
 claimfly_on_placeholder: "enabled"
