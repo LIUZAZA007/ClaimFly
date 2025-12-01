@@ -1,0 +1,42 @@
+# permissions for claimfly
+# permission: claim.fly.use - allows use of the /claimfly command
+# permission: claim.fly.autofly - allows auto-fly
+# permission: claim.fly.others - allows flying in claims where you are a trusted member
+# permission: claim.fly.admin.command - allows access to /claimfly <player>
+# permission: claim.fly.reload.command - allows access to /claimfly reload
+
+
+#settings
+auto_claimfly_enabled: true
+claimfly_notification: true
+autoclaimfly_notification: true
+on_damaged_disable_flight: true
+
+#allowed aliases for claimfly
+# Leave empty to allow all aliases, or specify which protection stone aliases can use claimfly
+# Example: protectionstone 10x10.toml -> alias = "10x10"
+# You can check available aliases by typing /ps give or /ps get in-game
+allowed_aliases:
+  - "10x10"
+  - "20x20"
+
+#custom messages
+nopermission: "&8 [&c&l!&8] &7You dont have a permission to use /claimfly command"
+outsideclaim: "&8 [&c&l!&8] &7You are outside of claimfly zone"
+
+#notification message
+claimfly_on: "&8 [&a&l!&8] &fClaimfly &aON"
+claimfly_off: "&8 [&c&l!&8] &7Claimfly &cOFF"
+ondamaged: "&8 [&c&l!&8] &7You've been hit! &7Claimfly &cOFF"
+
+#custom placeholder
+claimfly_on_placeholder: "enabled"
+claimfly_off_placeholder: "disabled"
+
+#command aliases
+# You can add custom aliases for commands here
+# Example: ["cf", "fly", "claimfly"]
+# restart server to apply changes or /plugman reload claimfly
+claimfly_aliases:
+  - "cf"
+  - "fly"
