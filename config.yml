@@ -17,8 +17,16 @@ on_damaged_disable_flight: true
 # Example: protectionstone 10x10.toml -> alias = "10x10"
 # You can check available aliases by typing /ps give or /ps get in-game
 allowed_aliases:
-  - "5x5"
+  - "10x10"
   - "20x20"
+
+# RedProtect region size limits (in blocks, area = X * Z)
+# Set to -1 to disable the limit
+# Example: min_area: 100 means regions must be at least 100 blocks (10x10)
+# Example: max_area: 10000 means regions must be at most 10000 blocks (100x100)
+redprotect:
+  min_area: -1  # Minimum area in blocks (-1 = no minimum)
+  max_area: -1  # Maximum area in blocks (-1 = no maximum)
 
 #custom messages
 # All messages use MiniMessage format. Learn more: https://docs.advntr.dev/minimessage/format.html

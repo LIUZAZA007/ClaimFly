@@ -17,15 +17,20 @@
 
 ClaimFly is a lightweight flight plugin designed for Minecraft servers using WorldGuard and ProtectionStones. It allows players to fly within their own claims or claims where they are trusted members, providing a seamless flying experience with automatic region detection.
 
+
+### Supported Plugins
+ClaimFly integrates seamlessly with a wide range of popular plugins:
+- **ProtectionStones** 
+- **RedProtect** 
+
 ### Key Features
 
 - **Claim-Based Flight** - Fly only within your own claims or claims where you're a trusted member
-- **ProtectionStones Integration** - Full support for ProtectionStones API to check ownership and membership
 - **Auto-Fly** - Automatically enable flight when entering a claim (optional)
 - **Damage Protection** - Automatically disable flight when taking damage (configurable)
 - **Fall Damage Prevention** - Prevents fall damage when flight is disabled due to damage or leaving a region
 - **Custom Command Aliases** - Configure custom command aliases via config.yml
-- **Alias Filtering** - Restrict flight to specific ProtectionStones aliases only
+- **Region Size Filtering** - Restrict flight based on region size (min/max area for RedProtect)
 - **PlaceholderAPI Support** - Custom placeholders for other plugins
 - **Folia Ready** - Full support for multi-threaded region servers
 
@@ -46,11 +51,6 @@ ClaimFly is a lightweight flight plugin designed for Minecraft servers using Wor
 **Required:**
 - Java 21 or higher
 - Paper 1.21+ (or Folia, Spigot 1.21+ compatible)
-- **WorldGuard** - Region protection system
-
-**Optional:**
-- **ProtectionStones** - Enhanced claim management and ownership checking
-- **PlaceholderAPI** - Placeholder expansion for other plugins
 
 ---
 
